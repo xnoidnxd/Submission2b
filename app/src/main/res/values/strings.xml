@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Github User</string>
+    <string name="following">Following</string>
+    <string name="repository">Repository</string>
+    <string name="company">Company</string>
+    <string name="location">Location</string>
+    <string name="followers">Followers</string>
+    <string name="website">Website</string>
+    <string name="email">Email</string>
+    <string name="inputUser">Find Github user</string>
+    <string name="change_language_settings">Change Language Setting</string>
+    <string name="user_not_found">User not found</string>
+    <string name="follower1">Follower</string>
+    <string name="following1">Following</string>
+    <string name="lets_go_find_a_user">Lets go find a user!</string>
+</resources>

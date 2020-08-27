@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/sv_users"
+        style="?android:attr/progressBarStyle"
+        android:src="@color/Background"
+        android:id="@+id/progressbar"
+        android:visibility="visible"/>
+
+    <SearchView
+        android:id="@+id/sv_users"
+        style="@style/SearchViewStyle"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:iconifiedByDefault="false"
+        android:queryHint="@string/inputUser"
+        android:background="@drawable/search"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_users"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_users"
+        app:layout_constraintVertical_bias="0.0"
+        tools:listitem="@layout/item_row_user" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:src="@drawable/ic_nodata"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sv_users"
+        app:layout_constraintVertical_bias="0.654"
+        android:visibility="gone"
+     />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/lets_go_find_a_user"
+        android:textSize="35sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/indiefont"
+        app:layout_constraintBottom_toTopOf="@+id/imageView2"
+        app:layout_constraintEnd_toEndOf="@+id/imageView2"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintStart_toStartOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="@+id/rv_users"
+        app:layout_constraintVertical_bias="0.952"
+        android:id="@+id/textImageView2"
+        android:visibility="gone"/>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
